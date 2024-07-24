@@ -1,0 +1,133 @@
+/* Responsivo para telas de até 768px */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  #mainNav .navbar-brand {
+      font-size: 16px;
+  }
+
+  #mainNav .navbar-nav {
+      text-align: center;
+  }
+
+  #mainNav .navbar-nav .nav-item {
+      margin: 0;
+  }
+
+  #mainNav .navbar-nav .nav-link {
+      font-size: 14px;
+  }
+
+  #whatsapp-icon {
+      font-size: 24px; /* Ajuste o tamanho do ícone */
+  }
+
+  /* Masthead */
+  .masthead {
+      text-align: center;
+  }
+
+  .masthead-subheading {
+      font-size: 18px;
+  }
+
+  .masthead-heading {
+      font-size: 24px;
+  }
+
+  .btn.btn-primary.btn-xl {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+
+  /* Sobre Nós */
+  #services .section-heading {
+      font-size: 24px;
+  }
+
+  #services .section-subheading {
+      font-size: 16px;
+  }
+
+  #services .fa-stack {
+      font-size: 3rem; /* Ajuste o tamanho dos ícones */
+  }
+
+  #services h4 {
+      font-size: 18px;
+  }
+
+  #services p {
+      font-size: 14px;
+  }
+
+  /* Timeline */
+  .timeline-image img {
+      width: 80px; /* Ajuste o tamanho das imagens da linha do tempo */
+      height: 80px;
+  }
+
+  .timeline-panel {
+      padding: 15px;
+  }
+
+  .timeline-heading h4 {
+      font-size: 16px;
+  }
+
+  .timeline-body p {
+      font-size: 14px;
+  }
+
+  /* Clients */
+  .py-5 .container .row {
+      text-align: center;
+  }
+
+  .py-5 .img-fluid {
+      max-width: 100px; /* Ajuste o tamanho dos logotipos */
+      height: auto;
+  }
+
+  /* Contato */
+  .box-contacts {
+      padding: 20px;
+  }
+
+  .box-contacts-icon {
+      font-size: 40px; /* Ajuste o tamanho do ícone */
+  }
+
+  .box-contacts-link a {
+      font-size: 14px;
+  }
+
+  /* Inscrição */
+  #contact .section-heading {
+      font-size: 24px;
+  }
+
+  #contact .section-subheading {
+      font-size: 16px;
+  }
+
+  #contact .btn.btn-primary.btn-xl {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+
+  /* Footer */
+  .footer {
+      text-align: center;
+  }
+
+  .footer .container .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer .text-lg-start,
+  .footer .text-lg-end {
+      text-align: center;
+  }
+}

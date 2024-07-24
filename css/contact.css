@@ -1,0 +1,124 @@
+/* Estilos principais */
+.box-contacts {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 310px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+  transition: all .3s ease;
+  background-color: #fff; /* Cor de fundo opcional */
+  border-radius: 8px; /* Cantos arredondados opcionais */
+  padding: 20px; /* Espaçamento interno opcional */
+  position: relative; /* Necessário para o efeito do sublinhado */
+  margin-bottom: 20px; /* Espaço abaixo do bloco */
+}
+
+/* Estilos do ícone */
+.box-contacts-icon {
+  font-size: 60px;
+  line-height: 1;
+  color: #3DF28B;
+  margin-bottom: 20px; /* Aumenta o espaço abaixo do ícone */
+  position: relative; /* Necessário para o efeito do sublinhado */
+  display: inline-block; /* Para garantir que o sublinhado fique centralizado */
+}
+
+/* Adiciona o sublinhado ao passar o mouse sobre o ícone */
+.box-contacts-icon::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #3DF28B;
+  transition: width .3s ease; /* Transição suave para a largura do sublinhado */
+  position: absolute;
+  bottom: -10px; /* Posiciona o sublinhado abaixo do ícone */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Mostra o sublinhado ao passar o mouse */
+.box-contacts:hover .box-contacts-icon::after {
+  width: 60px; /* Largura do sublinhado igual ao tamanho do ícone */
+}
+
+/* Efeito de animação ao passar o mouse */
+.box-contacts:hover {
+  transform: translateY(-10px); /* Move o elemento para cima */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); /* Aumenta a sombra */
+}
+
+/* Estilos adicionais (opcionais) */
+.box-contacts-decor {
+  display: none; /* Oculta decorações extras */
+}
+
+.box-contacts-link {
+  color: #333; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado dos links */
+  margin-top: 10px; /* Espaço acima do texto */
+}
+
+.box-contacts-link a {
+  color: black; /* Cor do link */
+  text-decoration: none; /* Remove sublinhado dos links */
+  font-weight: bold;
+}
+
+.box-contacts-link a:hover {
+  text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+/* Media queries para responsividade */
+
+/* Telas pequenas (móveis) */
+@media (max-width: 575.98px) {
+  .box-contacts {
+    min-height: 250px; /* Ajusta a altura mínima */
+    padding: 15px; /* Ajusta o padding */
+  }
+  
+  .box-contacts-icon {
+    font-size: 40px; /* Diminui o tamanho do ícone */
+    margin-bottom: 15px; /* Ajusta o espaço abaixo do ícone */
+  }
+  
+  .box-contacts-link {
+    margin-top: 5px; /* Ajusta o espaço acima do texto */
+  }
+}
+
+/* Telas médias (tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .box-contacts {
+    min-height: 270px; /* Ajusta a altura mínima */
+    padding: 15px; /* Ajusta o padding */
+  }
+  
+  .box-contacts-icon {
+    font-size: 50px; /* Ajusta o tamanho do ícone */
+    margin-bottom: 15px; /* Ajusta o espaço abaixo do ícone */
+  }
+  
+  .box-contacts-link {
+    margin-top: 8px; /* Ajusta o espaço acima do texto */
+  }
+}
+
+/* Telas grandes (desktops) */
+@media (min-width: 768px) {
+  .box-contacts {
+    min-height: 310px; /* Altura mínima padrão */
+    padding: 20px; /* Padding padrão */
+  }
+  
+  .box-contacts-icon {
+    font-size: 60px; /* Tamanho do ícone padrão */
+    margin-bottom: 20px; /* Espaço abaixo do ícone padrão */
+  }
+  
+  .box-contacts-link {
+    margin-top: 10px; /* Espaço acima do texto padrão */
+  }
+}

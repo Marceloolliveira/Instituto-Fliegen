@@ -1,0 +1,11 @@
+/* Estilo para o ícone do WhatsApp com ID específico */
+#whatsapp-icon {
+  font-size: 2rem; /* Ajuste o tamanho conforme necessário */
+  color: #25D366; /* Cor do ícone do WhatsApp */
+  transition: color 0.3s ease; /* Transição suave para a cor do ícone */
+  margin-top: -8px; /* Ajuste a margem para mover o ícone para cima */
+}
+
+#whatsapp-icon:hover {
+  color: #128C7E; /* Cor do ícone ao passar o mouse */
+}
