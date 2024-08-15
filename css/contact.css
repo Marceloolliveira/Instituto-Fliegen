@@ -70,9 +70,9 @@
   text-decoration: underline; /* Sublinha o link ao passar o mouse */
 }
 
-/* Media queries para responsividade */
 
-/* Telas pequenas (móveis) */
+
+/* Telas pequenas */
 @media (max-width: 575.98px) {
   .box-contacts {
     min-height: 250px; /* Ajusta a altura mínima */
